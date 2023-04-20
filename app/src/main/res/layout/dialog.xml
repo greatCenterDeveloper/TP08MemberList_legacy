@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NAME : "
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/dia_et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="9"
+            android:textSize="18dp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="GENDER : "
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <RadioGroup
+            android:id="@+id/dia_rg_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/dia_rb_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MALE"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/dia_rb_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FEMALE"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="NATION : "
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <Spinner
+            android:id="@+id/dia_sp_nation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/bg_spinner"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/dia_btn_member_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD MEMBER"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:backgroundTint="@color/teal_700"/>
+
+    <Button
+        android:id="@+id/dia_btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CANCEL"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:backgroundTint="@color/teal_700"/>
+</LinearLayout>
